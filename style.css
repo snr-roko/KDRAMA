@@ -223,10 +223,8 @@ body {
 }
 
 .quotes-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: block;
+    margin: 200px;
 }
 
 .quotes-container p {
