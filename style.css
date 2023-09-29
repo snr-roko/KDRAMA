@@ -1,3 +1,5 @@
+/* body styles */
+
 body {
     display: flex;
     flex-direction: column;
@@ -9,6 +11,7 @@ body {
     width: 100vw;
 }
 
+/* Top Info, First section styles*/
 .top-info,
 .footer {
     background-color: #1F2937;
@@ -88,17 +91,7 @@ body {
     margin-right: 80px;
     flex-shrink: initial;
     width: 30px;
-    cursor: pointer;
-    
-}
-
-.random-info {
-    background-color: #F9FAF8;
-    color: #1F2937;
-}
-
-.quotes {
-    background-color: #E5E7EB;
+    cursor: pointer;    
 }
 
 .header img {
@@ -126,40 +119,100 @@ body {
     font-family:'Times New Roman', Times, serif;
 }
 
+
+/* Random Info; second section styles */
+
+.random-info {
+    background-color: #F9FAF8;
+    color: #1F2937;
+}
+
+
 .random-info-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin: 30px;
 }
 
 .random-info-main {
     font-size: 36px;
     font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .buttons {
     display: flex;
-    gap: 10px
-}
-
-.buttons div {
-    width: 150px;
-    height: 150px;
-    flex-grow: 0;
+    padding: 0;
+    gap: 15px;
+    flex-wrap: wrap;
 }
 
 .buttons div button {
+    width: 250px;
+    height: 180px;
+    padding: 0;
     border: 2px solid #3882F6;
     border-radius: 15%;
-    width: 200px;
-    height: 150px;
+    
 }
 
-.buttons img {
+.buttons div button img {
     max-width: 100%;
+    min-height: 100%;
     max-height: 100%;
-    object-fit: cover;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 15%;
+    object-fit: fill;
 }
 
+.buttons div p {
+    width: 250px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.buttons div p a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 700;
+}
+
+/* Quote; third section syles */
+.quotes {
+    background-color: #E5E7EB;
+}
+
+.quotes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 400px;
+}
+
+.quotes-container p {
+    color: #1F2937;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    margin: 0;
+}
+
+.quotes-container .author {
+    margin-left: auto;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 800;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Sign up info; Fourth section styles */
 .sign-up {
     display: flex;
     justify-content: center;
@@ -170,9 +223,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 50px 180px;
+    padding: 50px 200px;
     gap: 40px;
-    margin: 50px;
+    margin: 50px 30px;
 }
 
 .sign-up-info h3,
@@ -182,24 +235,21 @@ body {
 }
 
 .sign-up-info h3 {
-    font-size: 28px;
+    font-size: 32px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: 900;
 }
 
 .sign-up-info p{
-    font-size: 14px;
+    font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     color: #E5E7EB;
     line-height: 20px;
+    margin-top: 10px;
 }
 
 .sign-up-info {
     flex-grow: 2;
-}
-
-.sign-up-button {
-    flex-grow: 1;
 }
 
 .sign-up-button button {
@@ -214,30 +264,11 @@ body {
     font-weight: 600;
 }
 
+/* Footer styles */
 .footer {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     font-family:Arial, Helvetica, sans-serif;
-}
-
-.quotes-container {
-    display: block;
-    margin: 200px;
-}
-
-.quotes-container p {
-    color: #1F2937;
-    font-size: 36px;
-    font-style: italic;
-    font-weight: lighter;
-}
-
-.quotes-container .author {
-    margin-left: auto;
-    font-style: normal;
-    font-size: 20px;
-    font-weight: 800;
-    font-family: Arial, Helvetica, sans-serif;
 }
